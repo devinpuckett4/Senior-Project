@@ -1,8 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="py-4">
+    <h1 class="display-6 fw-semibold">Church Outreach Inventory and Distribution System</h1>
+    <p class="lead text-secondary">
+        Helping our church organize supplies and serve our community.
+    </p>
+    <a class="btn btn-primary" asp-controller="Inventory" asp-action="Index">
+        View inventory
+    </a>
+</section>
+
+<section class="row g-4 mb-4" aria-label="System features">
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h5">Inventory</h2>
+                <p class="card-text">View available supplies and identify items running low.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h5">Donations</h2>
+                <p class="card-text">Record donated supplies and increase available stock.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h5">Distributions</h2>
+                <p class="card-text">Record supplies given out through church outreach.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="h5">Reports</h2>
+                <p class="card-text">Review inventory levels, donations, and distributions.</p>
+            </div>
+        </div>
+    </div>
+</section>
